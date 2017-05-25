@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ACE8DDF5-42EF-4F1D-93B1-B143E130AA5F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ArtLee.WechatPay</RootNamespace>
+    <AssemblyName>ArtLee.WechatPay</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DefaultWechatPayClient.cs" />
+    <Compile Include="IWechatPayClient.cs" />
+    <Compile Include="IWechatPayRequest.cs" />
+    <Compile Include="Notify\NotifySuccess.cs" />
+    <Compile Include="Notify\NotifyUtils.cs" />
+    <Compile Include="Notify\WechatPayNotifyResult.cs" />
+    <Compile Include="Parser\IWechatParser.cs" />
+    <Compile Include="Parser\WechatXmlParser.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Request\AuthcodeToOpenidRequest.cs" />
+    <Compile Include="Request\CloseOrderRequest.cs" />
+    <Compile Include="Request\DownloadBillRequest.cs" />
+    <Compile Include="Request\MicroPayRequest.cs" />
+    <Compile Include="Request\OrderQueryRequest.cs" />
+    <Compile Include="Request\RefundQueryRequest.cs" />
+    <Compile Include="Request\RefundRequest.cs" />
+    <Compile Include="Request\ReportRequest.cs" />
+    <Compile Include="Request\ReverseRequest.cs" />
+    <Compile Include="Request\ShortUrlRequest.cs" />
+    <Compile Include="Request\UnifiedOrderRequest.cs" />
+    <Compile Include="Response\AuthcodeToOpenidResponse.cs" />
+    <Compile Include="Response\CloseOrderResponse.cs" />
+    <Compile Include="Response\DownloadBillResponse.cs" />
+    <Compile Include="Response\MicroPayResponse.cs" />
+    <Compile Include="Response\OrderQueryResponse.cs" />
+    <Compile Include="Response\RefundQueryResponse.cs" />
+    <Compile Include="Response\RefundResponse.cs" />
+    <Compile Include="Response\ReportResponse.cs" />
+    <Compile Include="Response\ReverseResponse.cs" />
+    <Compile Include="Response\ShortUrlResponse.cs" />
+    <Compile Include="Response\UnifiedOrderResponse.cs" />
+    <Compile Include="TradeType.cs" />
+    <Compile Include="Utils\DateTimeExtensions.cs" />
+    <Compile Include="Utils\FileItem.cs" />
+    <Compile Include="Utils\WebUtils.cs" />
+    <Compile Include="Utils\WechatExtensions.cs" />
+    <Compile Include="Utils\WechatSignature.cs" />
+    <Compile Include="WechatPayResponse.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

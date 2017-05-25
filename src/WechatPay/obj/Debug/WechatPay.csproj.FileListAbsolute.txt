@@ -1,0 +1,5 @@
+c:\users\administrator\documents\visual studio 2015\Projects\WechatPay\WechatPay\obj\Debug\WechatPay.csprojResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2015\Projects\WechatPay\WechatPay\bin\Debug\ArtLee.WechatPay.dll
+c:\users\administrator\documents\visual studio 2015\Projects\WechatPay\WechatPay\bin\Debug\ArtLee.WechatPay.pdb
+c:\users\administrator\documents\visual studio 2015\Projects\WechatPay\WechatPay\obj\Debug\ArtLee.WechatPay.dll
+c:\users\administrator\documents\visual studio 2015\Projects\WechatPay\WechatPay\obj\Debug\ArtLee.WechatPay.pdb
